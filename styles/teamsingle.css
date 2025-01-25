@@ -1,0 +1,201 @@
+/* Team Member Section */
+.team-member {
+    padding: 100px 0;
+    background: var(--secondary-02);
+}
+
+.member-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+
+.member-info h1 {
+    font-size: 42px;
+    color: var(--primary-03);
+    margin: 0;
+}
+
+.member-info .social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.member-info .social-links a {
+    color: var(--primary-03);
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.member-info .social-links a:hover {
+    color: var(--primary-01);
+}
+
+.member-info .role {
+    display: block;
+    color: rgba(24, 24, 24, 0.7);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.member-info .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(24, 24, 24, 0.7);
+    margin-bottom: 32px;
+}
+
+.member-info h2 {
+    font-size: 32px;
+    color: var(--primary-03);
+    margin-bottom: 24px;
+}
+
+.member-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(24, 24, 24, 0.7);
+    margin-bottom: 24px;
+}
+
+.member-image {
+    position: relative;
+    padding: 40px;
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.member-image .pattern-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    background-image: radial-gradient(var(--primary-02) 2px, transparent 2px);
+    background-size: 10px 10px;
+    z-index: 1;
+}
+
+.member-image .green-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    background: var(--primary-01);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 40px 40px;
+    background: var(--primary-03);
+    position: relative;
+    overflow: hidden;
+    margin: 0 200px;
+    border-radius: 30px;
+}
+
+.newsletter-content {
+    text-align: center;
+    color: var(--secondary-02);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-content h2 {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 100px;
+    background: rgba(244, 244, 244, 1);
+    color: var(--primary-03);
+    font-size: 16px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(52, 52, 52, 0.5);
+}
+
+.newsletter-form .btn-subscribe {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 100px;
+    background: var(--primary-01);
+    color: var(--primary-03);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form .btn-subscribe:hover {
+    background: var(--primary-01);
+}
+
+.newsletter .pattern-dots {
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(var(--primary-01) 2px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.6;
+    transform: rotate(-45deg);
+}
+
+.newsletter .green-accent {
+    position: absolute;
+    bottom: -120px;
+    right: -100px;
+    width: 230px;
+    height: 230px;
+    background: var(--primary-02);
+    border-radius: 20px;
+    opacity: 1;
+    transform: rotate(45deg);
+} 
